@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 Years of bar chúm tar✨</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Caveat (Handwriting/Scrapbook feel) & Inter (Body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Inter:wght@300;400;500&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastel: {
+                            pink: '#fce7f3',
+                            beige: '#fef3c7',
+                            cream: '#fffbeb',
+                            brown: '#57423e'
+                        }
+                    },
+                    fontFamily: {
+                        handwriting: ['Caveat', 'cursive'],
+                        scrapbook: ['Kalam', 'cursive'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #fdfaf6;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e6d5c3' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            color: #57423e;
+            overflow-x: hidden;
+        }
+
+        /* Washi Tape Effect */
+        .tape {
+            position: absolute;
+            width: 100px;
+            height: 30px;
+            background-color: rgba(255, 235, 205, 0.6); /* Semi-transparent beige */
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-2deg);
+            z-index: 10;
+        }
+        .tape-pink { background-color: rgba(253, 214, 227, 0.7); transform: translateX(-50%) rotate(3deg); }
+        .tape-blue { background-color: rgba(214, 234, 253, 0.7); transform: translateX(-50%) rotate(-4deg); }
+
+        /* Polaroid Effect */
+        .polaroid {
+            background: #ffffff;
+            padding: 12px 12px 40px 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .polaroid:hover {
+            transform: scale(1.05) rotate(0deg) !important;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            z-index: 20;
+            border-color: #fbcfe8;
+        }
+        
+        /* Gently Floating Animation for Hero */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col items-center">
+
+    <header class="w-full max-w-6xl mx-auto pt-20 pb-16 px-4 text-center relative">
+        <div class="absolute top-10 left-10 md:left-20 rotate-12 opacity-70">
+            <i class="fa-solid fa-star text-4xl text-yellow-300 drop-shadow-md"></i>
+        </div>
+        <div class="absolute bottom-10 right-10 md:right-20 -rotate-12 opacity-70">
+            <i class="fa-solid fa-heart text-4xl text-pink-400 drop-shadow-md"></i>
+        </div>
+        
+        <div class="animate-float">
+            <h2 class="text-2xl md:text-3xl font-scrapbook text-pastel-brown mb-2 tracking-wider">
+                Celebrating 15 Years of Friendship
+            </h2>
+            <h1 class="text-6xl md:text-8xl font-handwriting font-bold text-pink-500 drop-shadow-sm mb-4">
+                bar chúm tar ✨
+            </h1>
+            <p class="text-lg md:text-xl font-sans font-medium text-gray-500 bg-white/60 inline-block px-4 py-2 rounded-full shadow-sm">
+                @thuonglamconchemchep
+            </p>
+        </div>
+    </header>
+
+    <section class="w-full max-w-5xl mx-auto px-6 py-12 relative">
+        <div class="text-center mb-12">
+            <h3 class="text-4xl font-scrapbook text-pastel-brown inline-block relative">
+                <span class="relative z-10">Kẻ Hở Tội Phạm 🕵️‍♀️</span>
+                <span class="absolute bottom-1 left-0 w-full h-3 bg-pink-200 -z-10 transform -rotate-1"></span>
+            </h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 place-items-center">
+            
+            <!-- Member 1 -->
+            <div class="polaroid w-64 -rotate-3 hover:border-2 border-transparent">
+                <div class="tape tape-pink"></div>
+                <div class="aspect-square bg-gray-200 overflow-hidden mb-3">
+                    <img src="https://placehold.co/400x400/fecdd3/57423e?text=Mi" alt="Hồng Mị" class="w-full h-full object-cover">
+                </div>
+                <div class="text-center font-handwriting">
+                    <h4 class="text-2xl font-bold text-gray-800">nguyễn my hồng mị</h4>
+                    <p class="text-lg text-pink-500"><i class="fa-brands fa-instagram"></i> @_thouzp_</p>
+                </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="polaroid w-64 rotate-2 translate-y-4 hover:border-2 border-transparent">
+                <div class="tape"></div>
+                <div class="aspect-square bg-gray-200 overflow-hidden mb-3">
+                    <img src="https://placehold.co/400x400/fde68a/57423e?text=Lua" alt="Mỹ Lụa" class="w-full h-full object-cover">
+                </div>
+                <div class="text-center font-handwriting">
+                    <h4 class="text-2xl font-bold text-gray-800">nguyễn thị mỹ lụa</h4>
+                    <p class="text-lg text-pink-500"><i class="fa-brands fa-instagram"></i> @euh_hnilie</p>
+                </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="polaroid w-64 -rotate-2 hover:border-2 border-transparent">
+                <div class="tape tape-blue"></div>
+                <div class="aspect-square bg-gray-200 overflow-hidden mb-3">
+                    <img src="https://placehold.co/400x400/bfdbfe/57423e?text=BeBi" alt="Bé Bi" class="w-full h-full object-cover">
+                </div>
+                <div class="text-center font-handwriting">
+                    <h4 class="text-2xl font-bold text-gray-800">nguyễn thị bé bi</h4>
+                    <p class="text-lg text-pink-500"><i class="fa-brands fa-instagram"></i> @_fzhong</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="w-full max-w-6xl mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h3 class="text-5xl font-handwriting font-bold text-pastel-brown inline-block relative">
+                Cuộn Phim Ký Ức 🎞️
+            </h3>
+            <p class="font-sans text-gray-500 mt-2">Dấu ấn tuổi trẻ của bar chúm tar</p>
+        </div>
+
+        <!-- Section: Kỉ niệm kh quên -->
+        <div class="mb-20">
+            <h4 class="text-3xl font-scrapbook mb-8 text-pink-600 pl-4 border-l-4 border-pink-400">✨ kỉ niệm kh quên</h4>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="polaroid w-56 rotate-3">
+                    <div class="tape"></div>
+                    <img src="https://placehold.co/300x250/e5e7eb/57423e?text=Chuyến+đi" class="w-full h-auto object-cover border border-gray-100" alt="Mem 1">
+                    <p class="font-handwriting text-xl text-center mt-3">Ngày đó xàm ghê 🤣</p>
+                </div>
+                <div class="polaroid w-64 -rotate-6">
+                    <div class="tape tape-blue"></div>
+                    <img src="https://placehold.co/350x250/e5e7eb/57423e?text=Tốt+nghiệp" class="w-full h-auto object-cover border border-gray-100" alt="Mem 2">
+                    <p class="font-handwriting text-xl text-center mt-3">Lớn cả rồi...</p>
+                </div>
+                <div class="polaroid w-52 rotate-2 translate-y-8">
+                    <div class="tape tape-pink"></div>
+                    <img src="https://placehold.co/250x300/e5e7eb/57423e?text=Sinh+nhật" class="w-full h-auto object-cover border border-gray-100" alt="Mem 3">
+                    <p class="font-handwriting text-xl text-center mt-3">SN lụa nà 🎂</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Làm gì zợ -->
+        <div class="mb-20">
+            <h4 class="text-3xl font-scrapbook mb-8 text-orange-500 pl-4 border-l-4 border-orange-400 text-right">làm gì zợ 🤗 ✨</h4>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-12">
+                <div class="polaroid w-60 -rotate-3">
+                    <div class="tape"></div>
+                    <img src="https://placehold.co/300x300/fcd34d/57423e?text=Trà+sữa" class="w-full aspect-square object-cover" alt="Do 1">
+                    <p class="font-handwriting text-xl text-center mt-3 text-gray-500">Uống miết mập 🧋</p>
+                </div>
+                <div class="polaroid w-72 rotate-6">
+                    <div class="tape tape-pink"></div>
+                    <img src="https://placehold.co/400x300/fdba74/57423e?text=Gà+rán" class="w-full h-48 object-cover" alt="Do 2">
+                    <p class="font-handwriting text-xl text-center mt-3 text-gray-500">Mỏ chu mỏ hỗn</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Xàm l nhất -->
+        <div class="mb-10">
+            <h4 class="text-3xl font-scrapbook mb-8 text-indigo-500 pl-4 border-l-4 border-indigo-400">xàm l nhất 💩</h4>
+            <div class="flex flex-wrap justify-center gap-4">
+                <div class="polaroid w-48 rotate-6">
+                    <div class="tape tape-blue"></div>
+                    <img src="https://placehold.co/200x250/cbd5e1/57423e?text=Dìm+1" class="w-full h-auto object-cover" alt="Dìm 1">
+                </div>
+                <div class="polaroid w-48 -rotate-12 translate-y-6">
+                    <div class="tape"></div>
+                    <img src="https://placehold.co/200x250/cbd5e1/57423e?text=Dìm+2" class="w-full h-auto object-cover" alt="Dìm 2">
+                </div>
+                <div class="polaroid w-56 flex flex-col items-center justify-center bg-pink-50 p-6 -rotate-2">
+                    <i class="fa-solid fa-quote-left text-3xl text-pink-300 mb-2"></i>
+                    <p class="font-handwriting text-2xl text-center text-gray-700 leading-tight">
+                        "Tình bạn 15 năm, bớt xàm giùm cái!"
+                    </p>
+                    <p class="font-sans text-xs mt-4 text-gray-400">- Ai đó đã nói -</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="w-full text-center py-10 mt-10 border-t border-gray-200">
+        <p class="font-sans text-sm text-gray-500">
+            Made with <i class="fa-solid fa-heart text-pink-500 animate-pulse"></i> for <b>bar chúm tar</b> <br>
+            © 2011 - 2026
+        </p>
+    </footer>
+
+    <script>
+        // JS đơn giản để tạo hiệu ứng nhỏ khi trang load
+        document.addEventListener('DOMContentLoaded', () => {
+            const polaroids = document.querySelectorAll('.polaroid');
+            polaroids.forEach((card, index) => {
+                // Tạo độ trễ khi tải trang cho từng thẻ
+                card.style.opacity = '0';
+                card.style.transform += ' translateY(20px)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+                    card.style.opacity = '1';
+                    // Đưa về transform ban đầu của CSS (bỏ translate Y)
+                    let currentTransform = card.style.transform;
+                    card.style.transform = currentTransform.replace('translateY(20px)', '');
+                }, 200 * index);
+            });
+        });
+    </script>
+</body>
+</html>
